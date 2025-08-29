@@ -4,6 +4,11 @@ run this command
 
 this repo presumes u have miniconda installed
 
+first do this
+```
+mv mininet_working_ubuntu24 mininet
+```
+
 kindly edit line 112 in util/install.sh
 
 ```bash
@@ -14,6 +19,13 @@ to match your preffered python location
 
 ```bash
 ./util/install.sh -s ./build/ -a 
+```
+then run this
+
+```bash
+sudo apt install mininet
+sudo apt install openvswitch-switch
+sudo systemctl start openvswitch-switch
 ```
 
 if it acts about a patch somewhere in between type `y` and press enter and move on with life
