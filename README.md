@@ -1,3 +1,36 @@
+IGNORE EVERYTHING BUT THIS
+====
+run this command
+
+this repo presumes u have miniconda installed
+
+kindly edit line 112 in util/install.sh
+
+```bash
+    SPECIFIC_PYTHON="/home/threesamyak/miniconda3/bin/python"
+```
+
+to match your preffered python location
+
+```bash
+./util/install.sh -s ./build/ -a 
+```
+
+if it acts about a patch somewhere in between type `y` and press enter and move on with life
+
+TEST:
+
+```
+sudo mn --switch ovs --controller ref --topo tree,depth=2,fanout=2 --test pingall
+```
+
+be happy!
+please dm me on whatsapp or raise an issue if something breaks
+
+
+IGNORE THIS
+====
+
 Mininet: Rapid Prototyping for Software Defined Networks
 ========================================================
 *The best way to emulate almost any network on your laptop!*
